@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* === COLORS === */
+
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(232, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 95%);
+
+  /* === TYPOGRAPHY === */
+
+  --font-size-small: 13px;
+  --font-size-regular: 15px;
+  --font-size-title: 24px;
+  --font-size-subtitle: 20px;
+
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+
+  --font-family-body: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-regular);
+  background-color: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+  justify-content: center;
+  align-items: center;
+  padding-block: 85px 78px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 311px;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+p {
+  letter-spacing: 0.0063rem;
+  color: var(--Grayish-Blue);
+}
+
+h1 {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-light);
+}
+
+h1 strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.header__title {
+  padding-bottom: 13px;
+}
+
+.card {
+  max-width: 311px;
+  padding: 28px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  border-radius: 8px;
+  border-top: 0.25rem solid var(--cyan);
+}
+
+.card__icon {
+  align-self: flex-end;
+}
+
+.card__description {
+  line-height: 23px;
+  font-size: var(--font-size-small);
+}
+
+.middle__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+
+.card--red {
+  border-color: var(--red);
+}
+
+.card--orange {
+  border-color: var(--orange);
+}
+
+.card--blue {
+  border-color: var(--blue);
+}
