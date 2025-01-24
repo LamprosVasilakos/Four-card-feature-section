@@ -90,6 +90,9 @@ h1 strong {
   gap: 33px;
   border-radius: 8px;
   border-top: 0.25rem solid var(--cyan);
+  -webkit-box-shadow: 0px 6px 8px 0px var(--Grayish-Blue);
+  -moz-box-shadow: 0px 6px 8px 0px var(--Grayish-Blue);
+  box-shadow: 0px 6px 8px 0px var(--Grayish-Blue);
 }
 
 .card__icon {
@@ -117,4 +120,35 @@ h1 strong {
 
 .card--blue {
   border-color: var(--blue);
+}
+
+@media screen and (width >= 23.4375rem) {
+  header {
+    max-width: 33.75rem;
+  }
+}
+
+@media screen and (width>=60rem) {
+  :root {
+    --font-size-title: 2.25rem;
+  }
+
+  main {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  .middle__wrapper {
+    gap: 1.875rem;
+  }
+
+  .card {
+    max-width: 21.875rem;
+    padding: 2rem;
+  }
+
+  h2 {
+    padding-bottom: 6px;
+  }
 }
